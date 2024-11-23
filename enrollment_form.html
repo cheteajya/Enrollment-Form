@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="enrollment_form.css">
+</head>
+<body>
+      <form>
+        <header>
+          <h1>Student Enrollment Form</h1>
+        </header>
+        <h3>Instructions:</h3>
+        <ol>
+            <li>Fill in the form fields.</li>
+            <li>Check your interests.</li>
+            <li>Click "Enroll Now" to submit.</li>
+        </ol>
+        <label for="full_name">Full Name:</label><br>
+        <input type="text" id="full_name" required><br>
+          
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" required><br>
+          
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" required><br>
+          
+        <label for="sex">Sex:</label><br>
+        <input type="radio" id="male" name="sex" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="sex" value="female">
+        <label for="female">Female</label><br>
+          
+        <label for="course">Course Options:</label><br>
+        <select id="course" required>
+            <option value="">Select Course</option>
+            <option value="abels">Bachelor of Arts in English Language Studies</option>
+            <option value="bsa">Bachelor of Science in Accountancy</option>
+            <option value="bsais">Bachelor of Science in Accounting Information System</option>
+            <option value="bse">Bachelor of Science in Enterpreneurship</option>
+            <option value="bsit">Bachelor of Science in Information Technology</option>
+            <option value="bspa">Bachelor of Science in Public Administration</option>
+            <option value="bssw">Bachelor of Science in Social Work</option>
+            <option value="btvted">Bachelor of Technical-Vocational Teacher Education</option>
+        </select><br> 
+          
+        <label for="interests">Interests:</label><br>
+        <input type="checkbox" id="web_dev" name="interests" value="Web Development">
+        <label for="web_dev">Web Development</label><br>
+        <input type="checkbox" id="data_science" name="interests" value="Data Science">
+        <label for="data_science">Data Science</label><br>
+        <input type="checkbox" id="networking" name="interests" value="Networking">
+        <label for="networking">Networking</label><br>
+        <input type="checkbox" id="graphic_design" name="interests" value="Graphic Design">
+        <label for="graphic_design">Graphic Design</label><br>
+          
+        <button type="submit">Enroll Now</button>
+    </form>
+    <table>
+      <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Age</th>
+          <th>Sex</th>
+          <th>Course</th>
+          <th>Interests</th>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>Juan Dela Cruz</td>
+          <td>juan.delacruz@gmail.com</td>
+          <td>21</td>
+          <td>Male</td>
+          <td>ABELS</td>
+          <td>Web Development, Networking</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>Jane Smith</td>
+          <td>janesmith@gmail.com</td>
+          <td>22</td>
+          <td>Female</td>
+          <td>BSSW</td>
+          <td>Data Science, Graphic Design</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>Bob Johnson</td>
+          <td>bobjohnson@gmail.com</td>
+          <td>21</td>
+          <td>Male</td>
+          <td>BSPA</td>
+          <td>Web Development, Data Science</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>Alice Williams</td>
+          <td>alicewilliams@gmail.com</td>
+          <td>20</td>
+          <td>Female</td>
+          <td>BSIT</td>
+          <td>Networking, Graphic Design</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>Mike Davis</td>
+          <td>mikedavis@gmail.com</td>
+          <td>22</td>
+          <td>Male</td>
+          <td>BSSW</td>
+          <td>Web Development, Data Science</td>
+      </tr>
+  </table>
+  </body>
+</html>
